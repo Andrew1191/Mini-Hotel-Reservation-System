@@ -1,3 +1,82 @@
+Mini Hotel Reservation System
+A console-based Hotel Management System developed in C++ to automate room bookings, manage customer accounts, and handle admin operations with secure file handling and robust validation.
+
+ Features & Functionalities
+Data Management: Utilizes structs (date, customer, room, reservation, review, admin) to manage 5 floors (50 rooms) with dynamic pricing and offers.
+
+Authentication: Distinct portals for Customers (sign up, book, review) and Admins (manage, modify, or cancel bookings).
+
+Core Booking Logic: Prevents double-booking via dynamic date-overlap checks and calculates total costs including extra services.
+
+Data Persistence: Uses File I/O to save/load all records (.txt), ensuring zero data loss between sessions.
+
+ Edge Cases Handled
+File Safety: Seamlessly creates missing files upon exit without crashing the system.
+
+Date Validation: Uses <ctime> to block past bookings and ensures chronological date ranges.
+
+Payment Security: Logically validates credit cards using the Luhn Algorithm.
+
+Input Constraints: Prevents duplicate usernames and ensures valid email formats (checks for @).
+
+Review System: Restricts reviews to verified guests and filters out reviews older than 30 days.
+
+Admin Override: Admins can bypass payment validation to manually assist customers.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 #include <iostream>
 #include <string>
 #include <ctime>
